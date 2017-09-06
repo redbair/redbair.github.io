@@ -1,43 +1,98 @@
-<!DOCTYPE HTML>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Настройка бота</title>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Документ без названия</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div class="header">
+    <div class="wrapper">
+        <img class="logo" src="img/Logo.png">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-  1. Скачиваем архив с ботом!<br>
-2. Открываем PokemonGo.Haxton.Console.exe.config.<br>
-3. В строчке AccountType пишем либо Google либо Ptc в зависимости от вашего аккаунта.<br>
-4. В строчках DefaultLatitude и DefaultLongitude пишем координаты. В координатах используем только запятые.<br>
-5. Ниже заполняем строчки GoogleEmail и GooglePassword если ваш аккаунт на гугле или PtcUsername и PtcPassword если аккаунт на покемон трейнер клабе.<br>
-6. Дальше настраиваем конфиг по желанию, но лучше для избежания проблем конфиг не трогать, всё и так настроено идеально для удобной работы.<br>
-7. Сохраняем конфиг, идём в папку UserSettings.<br>
-8. Открываем файл LocationsToCycle.cfg через блокнот/нотпад.<br>
-9. Вписываем сюда свои координаты, точно так же как в 4 пункте, используя только запятые.<br>
-10. Запускаем PokemonGo.Haxton.Console.exe. Если всё настроено хорошо, то бот запускается и приступает к работе.<br>
+<div class="grey-huyna">
+    <div class="wrapper">
+        <div class="left">
+            <img class="glogo" src="img/glogo.png">
+            <span class="head-text-left">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</span>
+            <div class="line"></div>
+            <span class="head-text-left-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.</span>
+            <form enctype="multipart/form-data" method="post">
+                <input type="submit" value="Download"></p>
+            </form>
+        </div>
 
-<p>Параметр "TransferDuplicatePokemon" в конфиге не трогайте, его изменение приводит к некорректной работе бота.</p>
+        <div class="right">
+            <div class="signup">
+                <div class="try">Try Your <span>FREE</span> Trial Today</div>
+                    <form method='post' class='reg-form'>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="get-started" value="Get Started">
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>Для тех у кого ошибка Fatal Error, перечитайте внимательно 4 и 9 пункт. Если ошибка осталась, отключите двухэтапную аутентификацию в гугле, ссылка ниже.</p>
-<a href="https://support.google.com/accounts/answer/1064203?hl=ru/">ЖМИ</a>
+<div class="social-media">
+    <div class="wrapper">
+        <div class="social-left">
+            <h2>Social Media</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="social-links">
+            <a class="social social-fb" href="#1"></a>
+            <a class="social social-tw" href="#2"></a>
+            <a class="social social-g" href="#3"></a>
+            <a class="social social-p" href="#4"></a>
+            <a class="social social-in" href="#5"></a>
+            <a class="social social-huy" href="#6"></a>
+            <a class="social social-rss" href="#7"></a>
+        </div>
+    </div>
+</div>
 
-<p>ВНИМАНИЕ! В первый запуск бот удалит всех неподходящих по требованиям покемонов, а также почистит ваш инвентарь оставив нужные вещи по нужному количеству! Это не баг, это функция бота!</p>
-
-<p>Теперь пару слов о конфиге, объясню некоторые параметры.</p>
-KeepMinIvPercentage - Минимальный IV (см. ниже) при котором бот не удаляет покемонов.<br>
-KeepMinCp - Минимальный СР при котором бот не удаляет покемонов.<br>
-WalkingSpeedInKilometerPerHour - Скорость передвижения бота в км/ч.<br>
-KeepPokemonsThatCanEvolve - Оставлять/Не оставлять покемонов которые могут эволюционировать.<br>
-TransferDuplicatePokemon - Удалять/Не удалять одинаковых покемонов. (Удаляться будут худшие, по параметру IV или CP, по какому параметру бот будет удалять покемонов разберем в параметре PrioritizeIvOverCp)<br>
-KeepMinDuplicatePokemon - Минимальное количество одинаковых покемонов.<br>
-PrioritizeIvOverCp - Если true то бот ставит IV в приоритет выше чем CP. То есть например у вас есть Пиджи с 96% IV и 80 CP, бот поймал Пиджи с 56% IV и 730 CP, в этой ситуации удалится второй Пиджи, потому что у него ниже IV. Если хотите чтобы приоритет CP был выше чем IV, то ставьте значение false.<br>
-UseLuckyEggs - Использовать/Не использовать яйца на опыт.<br>
-UseBurstMode - Использовать/Не использовать бурст мод. Я не понял что это, но это дает большой прирост в опыте, советую включать.<br>
-EvolveAll - Эволюционировать/Не эволюционировать покемонов.<br>
-
-<p>IV (Individual Value) - это показатель который высчитывает все характеристики и измеряет в процентах качество твоего покемона, то есть чем выше тем покемон лучше.</p>
-
-
- </body>
+<div class="tabs">
+    <div class="wrapper">
+        <ul class="buttons">
+            <li class="tabo">TAB 1</li>
+            <li class="tab">TAB 2</li>
+            <li class="tab">TAB 3</li>
+        </ul>
+        <div class="tabs-info">
+            <h2>Tabs with soft transitioning effect.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+               bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+               justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+               penatibus et magnis dis parturient montes.<br>
+               <br>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+               bibendum laoreet.
+            </p>
+            <form method="post" class="tabs-form">
+            <input type="submit" name="down" value="Download">
+            </form>
+        </div>
+        <img class="city" src="img/city.png">
+    </div>
+</div>
+</body>
 </html>
