@@ -354,7 +354,8 @@
 .picsec .line,
 .title-why .line,
 .title-price .line,
-.reviews .line {
+.reviews .line,
+.title-cont .line {
     border-bottom: 2px solid #ff8b38;
     width: 64px;
     margin-bottom: 30px;
@@ -365,7 +366,8 @@
 .why .column p,
 .title-why p,
 .title-price p,
-.reviews .title p {
+.reviews .title p,
+.title-cont p {
     font-family: 'Open Sans';
     font-size: 14px;
     line-height: 1.43;
@@ -429,7 +431,8 @@
 }
 .title-why h1,
 .title-price h1,
-.reviews .title h1{
+.reviews .title h1,
+.title-cont h1{
     font-family: 'Raleway';
     font-size: 36px;
     line-height: 1.19;
@@ -659,11 +662,26 @@
     color: rgba(255, 255, 255, 0.22);
 }
 .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     height: 612px;
     position: relative;
 }
+.contact p {
+    text-align: center;
+    margin-bottom: 80px;
+}
 .contact .names {
+    display: inline-block;
     height: 150px;
+    width: 1400px;
+    padding-right: 1000px;
+    float: left;
+}
+.title-cont .line{
+    display: inline-block;
 }
 .contact form {
     display: inline-block;
@@ -677,13 +695,17 @@
     border: none;
     border-bottom: 1px solid #d6d6d6;
     padding-left: 14px;
+    margin-bottom: 30px;
 }
 .contact input[name="mess"]{
     width: 526px;
-    top: 50px;
+    top: 337px;
     left: 1000px;
-    height: 100px;
+    height: 150px;
     position: absolute;
+    padding-right: 50px;
+    padding-bottom: 125px;
+    margin-bottom: 0;
 }
 
 .contact input[type=submit] {
@@ -692,9 +714,65 @@
     background-color: #ff9b51;
     border:0;
     border-radius: 4px;
-    margin-top: 50px;
     font-family: 'Open Sans';
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
+    margin-left: 512px;
+}
+.footer {
+    height: 83px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer .wrapper {
+
+}
+.footer .social-links {
+    display: flex;
+    height: 23px;
+    width: 317px;
+    background: url("img/footer.png") no-repeat 0 0;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer .social-links .social {
+    width: 30px;
+    height: 23px;
+    margin-right: 0px;
+}
+.footer .social-links .social-fb {
+    width: 50px;
+    margin-right: 25px;
+}
+.footer .social-links .social-tw {
+    width: 85px;
+    margin-right: 30px;
+}
+.footer .social-links .social-g {
+    width: 75px;
+    margin-right: 23px;
+}
+.footer .social-links .social-p {
+    width: 70px;
+    margin-right: 28px;
+}
+.footer .social-links .social-in {
+    width: 70px;
+    margin-right: 30px;
+}
+.footer .social-links .social-huy {
+    width: 90px;
+    margin-right: 25px;
+}
+.footer .social-links .social-rss {
+    width: 70px;
 }
