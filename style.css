@@ -92,14 +92,15 @@
     text-align: left;
     color: #ffffff;
 }
-.grey-huyna .line {
+.grey-huyna .line,
+.stylish .line {
     border-bottom: 2px solid #ffffff;
     width: 64px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.grey-huyna .head-text-left-small {
-    opacity: 0.8;
+.grey-huyna .head-text-left-small,
+.stylish p {
     font-family: 'Raleway';
     font-size: 16px;
     font-weight: 300;
@@ -107,7 +108,8 @@
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
 }
-.left input[type=submit] {
+.left input[type=submit],
+.stylish input[type=submit] {
     margin-top: 44px;
     height: 42px;
     width: 135px;
@@ -351,24 +353,26 @@
 .box .line,
 .picsec .line,
 .title-why .line,
-.title-price .line {
+.title-price .line,
+.reviews .line {
     border-bottom: 2px solid #ff8b38;
     width: 64px;
     margin-bottom: 30px;
 }
 .box>p,
 .stan p,
-.title p,
+.sub-list .title p,
 .why .column p,
 .title-why p,
-.title-price p {
+.title-price p,
+.reviews .title p {
     font-family: 'Open Sans';
     font-size: 14px;
     line-height: 1.43;
     text-align: left;
     color: #86878b;
 }
-.title h2 {
+.sub-list .title h2 {
     font-family: 'Open Sans';
     margin-left: 71px;
     font-size: 14px;
@@ -381,13 +385,13 @@
     margin-bottom: 42px;
     height: 56px;
 }
-.title img {
+.sub-list .title img {
     position: absolute;
     height: 40px;
     width: 40px;
     border: 0px solid white;
 }
-.title p {
+.sub-list .title p {
     margin-left: 71px;
     width: 363px;
 }
@@ -424,7 +428,8 @@
     margin-bottom: 80px;
 }
 .title-why h1,
-.title-price h1{
+.title-price h1,
+.reviews .title h1{
     font-family: 'Raleway';
     font-size: 36px;
     line-height: 1.19;
@@ -446,7 +451,8 @@
 }
 .why .column p,
 .title-why p,
-.title-price p {
+.title-price p,
+.reviews .title p {
     text-align: center;
 }
 .why .column h2 {
@@ -552,4 +558,143 @@
 }
 .price .size:last-child {
     margin-right: 0px;
+}
+.reviews {
+    height: 591px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews .title {
+    text-align: center;
+}
+.reviews .title .line {
+    display: inline-block;
+}
+.reviews .column {
+    display: inline-block;
+    width: 275px;
+    margin-right: 120px;
+}
+.reviews .column:last-child {
+     margin-right: 0px;
+}
+.reviews .ava {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #9a9a9a;
+    border-radius: 50%;
+}
+.reviews .person .name {
+    padding-top: 10px;
+    margin-left: 85px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #333333;
+}
+.reviews .person span,
+.reviews .comment {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: #86878b;
+}
+.reviews .title p {
+    margin-bottom: 55px;
+}
+.reviews .comment {
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 24px 13px 36px 12px;
+    height: 147px;
+    margin-bottom: 23px;
+    border-radius: 3px;
+    font-style: italic;
+}
+.reviews .comment:before {
+    content: "";
+    position: absolute;
+    top: 147px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: #f5f5f5 transparent transparent transparent;
+}
+.stylish {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #9a9a9a;
+    text-align: center;
+}
+.stylish .head-text-left {
+    display: inline-block;
+    margin-top: 74px;
+    font-family: 'Raleway';
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+.stylish .line {
+    text-align: center;
+    margin: 26px 0 23px 337px;
+}
+.stylish p {
+    margin-bottom: 33px;
+}
+.stylish input[type=submit] {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.stylish .ins {
+    font-family: 'Open Sans';
+    font-size: 16.5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.22);
+}
+.contact {
+    height: 612px;
+    position: relative;
+}
+.contact .names {
+    height: 150px;
+}
+.contact form {
+    display: inline-block;
+    height: 150px;
+    width: 526px;
+    text-align: center;
+}
+.contact input[type=text] {
+    width: 527px;
+    height: 31px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    padding-left: 14px;
+}
+.contact input[name="mess"]{
+    width: 526px;
+    top: 50px;
+    left: 1000px;
+    height: 100px;
+    position: absolute;
+}
+
+.contact input[type=submit] {
+    width: 148px;
+    height: 46px;
+    background-color: #ff9b51;
+    border:0;
+    border-radius: 4px;
+    margin-top: 50px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
 }
