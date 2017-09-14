@@ -678,9 +678,9 @@
     display: inline-block;
 }
 .contact form {
-    display: inline-block;
+    display: flex;
     height: 150px;
-    width: 526px;
+    width: 1026px;
     text-align: center;
 }
 .contact input[type=text] {
